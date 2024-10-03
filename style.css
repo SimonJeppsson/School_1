@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #0081ea;
     padding-top: 30px;
     min-height: 70px;
     border-bottom: #77b6ea 3px solid;
@@ -36,7 +36,7 @@ header a {
 
 header ul {
     padding: 0;
-    list-style: none;
+    list-style:none;
 }
 
 header ul li {
@@ -46,14 +46,16 @@ header ul li {
 
 header h1 {
     float: left;
+    display:flex ;
+    align-items: center;
 }
 
 .section {
     padding: 20px 0;
     
+    
 }
 .profilepicture{
-
     width: 40%;
 }
 
@@ -71,15 +73,14 @@ h2 {
 .project-card {
     background: #fff;
     padding: 20px;
-
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
-    flex: 1 1 calc(33.333% - 15px); /* Adjusts the cards to take 1/3rd of the container with a 15px gap */
-    box-sizing: border-box;
+    flex: 0 1 30%; /* Allow the card to shrink and take up about 30% of the container */
+    margin: 0 7.5px; /* Add horizontal margin for the gap */
+    box-sizing: border-box; /* Ensures padding and borders are included in the total width */    box-sizing: border-box;
 }
 .Projectpicture{
-
     width: 100%;
 }
 
@@ -90,24 +91,36 @@ footer {
     padding: 10px 0;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
-form button {
+button {
     width: 100%;
     padding: 10px;
-    background-color: #77b6ea;
+    background-color: #0081ea;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition-duration: 600ms;
+
 }
 
-form button:hover {
-    background-color: #5a9ed9;
+button:hover {
+    background-color: #89b8de;
+    border-color: #333;
+    transition-duration: 600ms;
+
+}
+.footer{
+display: flex;
+align-items: center;
+justify-content: center;  
+margin: 15px;
+height: 100px;
+}
+
+@media (max-width: 768px) {
+
+    .profilepicture {
+       display: none;
+    }
 }
