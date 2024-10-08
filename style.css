@@ -15,8 +15,6 @@ body {
     margin: auto;
     overflow: hidden;
     display: flex;
-    
-    
 }
 
 header {
@@ -91,7 +89,6 @@ footer {
     padding: 10px 0;
 }
 
-
 button {
     width: 100%;
     padding: 10px;
@@ -101,15 +98,44 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition-duration: 600ms;
-
 }
 
 button:hover {
     background-color: #89b8de;
     border-color: #333;
     transition-duration: 600ms;
-
 }
+.table {
+    width: 50%;
+    margin: 0 auto; /* Centers the table */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  .table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  .table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
+  .table caption {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .table-responsive {
+    overflow-x: auto;
+  }
 .footer{
 display: flex;
 align-items: center;
@@ -117,7 +143,6 @@ justify-content: center;
 margin: 15px;
 height: 100px;
 }
-
 @media (max-width: 768px) {
 
     .profilepicture {
