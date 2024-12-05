@@ -10,6 +10,20 @@ body {
     background-color: #f4f4f4;
 }
 
+#meny a {
+    text-decoration: none; 
+    color: white; 
+    padding: 10px; 
+    transition: 0.3s ease; 
+    border-radius: 5px; 
+  }
+  
+  #meny a:hover {
+    color: white; 
+    background-color: blue; 
+    border-radius: 5px; 
+  }
+  
 .container {
     width: 80%;
     margin: auto;
@@ -74,9 +88,9 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
-    flex: 0 1 30%; /* Allow the card to shrink and take up about 30% of the container */
-    margin: 0 7.5px; /* Add horizontal margin for the gap */
-    box-sizing: border-box; /* Ensures padding and borders are included in the total width */    box-sizing: border-box;
+    flex: 0 1 30%;
+    margin: 0 7.5px; 
+    box-sizing: border-box; box-sizing: border-box;
 }
 .Projectpicture{
     width: 100%;
@@ -105,37 +119,30 @@ button:hover {
     border-color: #333;
     transition-duration: 600ms;
 }
-.table {
-    width: 50%;
-    margin: 0 auto; /* Centers the table */
-    border-collapse: collapse;
+table {
+    width: 80%;
+    border-collapse: collapse; 
+    margin: 20px 0; 
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333;
-  }
-  .table th, .table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
+    font-size: 16px; 
     text-align: left;
   }
-  .table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
+
+  thead th {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px; 
+    text-transform: uppercase; 
   }
-  .table tr:nth-child(even) {
-    background-color: #f9f9f9;
+  
+  tbody td {
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
   }
-  .table tr:hover {
-    background-color: #f1f1f1;
-  }
-  .table caption {
-    font-size: 16px;
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  .table-responsive {
-    overflow-x: auto;
-  }
+
+  
+
+  
 .footer{
 display: flex;
 align-items: center;
